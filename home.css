@@ -1,1 +1,93 @@
 
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/CooperBT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Avenir Next Arabic';
+  src: url('fonts/AvenirNextArabic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  font-family: 'Avenir Next Arabic', sans-serif;
+  background-color: #fdd835;
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  background-color: white;
+  padding: 12px 20px;
+  display: inline-flex;   
+  gap: 24px;
+  border-radius: 60px;     
+  
+  position: fixed;     
+  top: 0;                 
+  right: 32px;            
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 14px;
+  
+  font-family: 'Avenir Next Arabic', sans-serif;
+}
+
+.menu-link {
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+  transform: scale(1.15);
+}
+
+
+.brand {
+  padding-top: 40px;
+  text-align: center;
+  
+}
+
+.title {
+  font-family: 'Cooper BT', serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.tagline {
+  font-family: 'Avenir Next Arabic', sans-serif;
+  font-size: 22px;
+  margin: 10px 0 0;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.hero-image {
+  width: min(1000px, 92vw);
+  height: auto;
+  border-radius: 12px;
+}
+
+.nav-link:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s ease-in-out;
+}
