@@ -1,4 +1,4 @@
-
+/* Creates 2 new fonts */
 @font-face {
   font-family: 'Cooper BT';
   src: url('fonts/CooperBT.woff2') format('woff2');
@@ -19,12 +19,14 @@
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 
+/* The asterisk at the beginning targets all of the elements in the page. For the rest of the declaration, it makes styling the page much easier as the elements won’t unexpectedly grow when adding padding and borders.  */
+
 body {
   font-family: 'Avenir Next Arabic', sans-serif;
   background-color: #fdd835;
   scroll-behavior: smooth;
 }
-
+/* This declaration block turns the default font of the page to Avenir Next Arabic, turns the background color to a bright yellow as well as making the scrolling movement gentle yet gradual.  */
 .nav-bar {
   background-color: white;
   padding: 12px 20px;
@@ -36,7 +38,7 @@ body {
   top: 0;                 
   right: 32px;            
 }
-
+/*Explanation: Creates a small navigational area that takes you to other pages when clicked on. It has a white, rounded background that takes up only the portion of which the text is written on and it will always sit on the top of the visible screen even if the user scrolls down.   */
 .nav-link {
   text-decoration: none;
   color: black;
@@ -46,28 +48,27 @@ body {
   
   font-family: 'Avenir Next Arabic', sans-serif;
 }
-
+/*  Explanation: This CSS declaration block only targets the links themselves. This makes the links bolded, black and have the font of Avenir Next Arabic. The padding declaration makes it so that the navigational area appears larger on the visible screen. */
 .menu-link {
   transition: transform 0.2s ease-in-out;
 }
-
+/* Explanation: Targets the menu link so that when the user hovers over it, it doesn’t just jump out but has a smooth transition.  */
 .menu-link:hover {
   transform: scale(1.15);
 }
-
+/*Explanation: When the user hovers over the menu link, it will grow to 115% of its original size.   */
 
 .brand {
   padding-top: 40px;
   text-align: center;
-  
 }
-
+/* Explanation: moves the Quesada heading and the paragraph tag to be aligned with the center and 40 pixels away from the top of the screen.  */
 .title {
   font-family: 'Cooper BT', serif;
   font-size: 48px;
   margin: 0;
 }
-
+/*  */
 .tagline {
   font-family: 'Avenir Next Arabic', sans-serif;
   font-size: 22px;
