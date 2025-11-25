@@ -1,1 +1,94 @@
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/CooperBT.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Arabic';
+  src: url('fonts/AvenirNextArabic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+
+
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next Arabic', sans-serif;
+  background-color: #fcd34d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.sidebar {
+  flex: 1;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: "Cooper BT", serif;
+}
+
+.home-button {
+  background-color: #000;
+  color: #fff;
+  padding: 2px 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 25px
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+.menu-items {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: "Cooper BT", serif;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  font-family: "Avenir Next Arabic", sans-serif;
+}
